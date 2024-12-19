@@ -1,4 +1,6 @@
-export default function RootLayout({ children, } { children : React<ReactNode></ReactNode>}) {
+import { ReactNode } from 'react';
+
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
@@ -6,13 +8,4 @@ export default function RootLayout({ children, } { children : React<ReactNode></
       </body>
     </html>
   );
-}
-
-{
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  }
 }
